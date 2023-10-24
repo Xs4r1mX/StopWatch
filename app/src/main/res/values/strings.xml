@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StopWatch</string>
+    <string name="start">START</string>
+    <string name="reset">RESET</string>
+    <string name="enter_time_in_minutes">Enter time in minutes</string>
+    <string name="timer">Timer</string>
+    <string name="time">Time (mins)</string>
+    <string name="set_timer">Set Timer</string>
+    <string name="stop_watch">Stop Watch</string>
+    <string name="todo">TODO</string>
+</resources>

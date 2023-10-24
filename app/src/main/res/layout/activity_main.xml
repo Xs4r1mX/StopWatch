@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/timer"
+        android:textSize="60sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enterTextLayout"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="4"
+        android:hint="@string/time"
+        app:startIconDrawable="@drawable/timer">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="4"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/set_timer_btn"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="@string/set_timer"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/countdownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="60sp"
+        tools:text="10:00" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/countdownButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/start"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/reset"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
